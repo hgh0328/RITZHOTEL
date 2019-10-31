@@ -20,12 +20,16 @@ $(document).ready(function () {
         $(".Base2 > .ThirdLine > ul > .Line-HighSpace > .fa-angle-down").toggleClass("on");
     });
     
-    $(".Base .btn").click(function () {
+    $(".Base .btn").click(function (e) {
+        console.log("aaa");
+        e.preventDefault();
         $(".Base").hide();
         $(".Base2").show();
         $(".Base3").hide();
     });
-    $(".Base2 .ClearBtn").click(function () {
+    $(".Base2 .ClearBtn").click(function (e) {
+        console.log("bbb");
+        e.preventDefault();
         $(".Base").hide();
         $(".Base2").hide();
         $(".Base3").show();

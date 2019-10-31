@@ -37,7 +37,6 @@
             position: relative;
             background: url(images/Join/join.jpg) no-repeat center 0;
             background-attachment: fixed;
-            overflow: hidden;
             height: 500px;
         }
 
@@ -114,6 +113,7 @@
                 $(".join_keytitle").css({
                     top: st
                 });
+                console.log($(window).scrollTop());
             });
         });
 
@@ -139,22 +139,24 @@
 
         <div class="Base">
             <div class="content">
-                
+                <div class="HighPlusDesign">
+
+                </div>
                 <div class="step">
                     <ul>
                         <li>
                             <p class="step_txt1">STEP1<br>
-                                    회원인증<br></p>
+                                회원인증<br></p>
                         </li>
                         <li><i class="fa fa-angle-right"></i></li>
                         <li>
                             <p class="step_txt2">STEP2<br>
-                                    정보입력</p>
+                                정보입력</p>
                         </li>
                         <li><i class="fa fa-angle-right"></i></li>
                         <li>
                             <p class="step_txt3">STEP3<br>
-                                    가입완료</p>
+                                가입완료</p>
                         </li>
                         <hr>
                     </ul>
@@ -164,7 +166,7 @@
                     <ul class="blankBox">
                         <li>
                             <p>E-MAIL로 회원 가입</p>
-                            <p>인증완료 후 해당 이메일 계정이 회원 아이디로 등록되며,
+                            <p>인증완료 후 해당 이메일 계정이 회원 아이디로 등록되며,<br>
                                 추후 변경할 수 없습니다.</p>
                         </li>
                         <li>
@@ -213,6 +215,8 @@
         </div>
         <div class="Base2">
             <div class="content2">
+                <div class="HighPlusDesign">
+                </div>
                 <div class="step2">
                     <ul>
                         <li>
@@ -571,7 +575,7 @@
                                 </table>
                             </filedset>
 
-                            <p class="SecondUnderMiddle">필수항목에 대한 수집 및 이용에 동의 하지 않을 권리는 있으나, 맴버십에 가입하실 수 없습니다.</p>
+                            <p class="SecondUnderMiddle">필수항목에 대한 수집 및 이용에 동의 하지 않을 권리는 있으나, 미동의 시 맴버십에 가입하실 수 없습니다.</p>
                         </div>
                     </li>
                     <li class="Line-HighSpace2">
@@ -603,7 +607,7 @@
                                 </tbody>
                             </filedset>
 
-                            <p class="SecondUnderMiddle">마케팅 활용에 동의하지 않을 권리가 있으며, 미동의 시 서비스 이용에 제한이 있을 수 있습니다.</p>
+                            <p class="SecondUnderMiddle">마케팅 활용에 동의하지 않을 권리가 있으며, 미동의 시 맴버십 가입은 가능하나 서비스 이용에 제한이 있을 수 있습니다.</p>
 
                         </div>
 
@@ -670,13 +674,14 @@
                 </ul>
             </div>
             <div class="MiddleTextSpace">
-                <p>"Rits Hotel"은 개인정보보호법"및"정보통신망 이용 촉진 및 정보보호 등에 관한 법률"을 준수하며 내용 외의  사항은 "Rits Hotel"의 개인정보처리방침에 준하며 자세한 내용은 www.walkerhill.com에서 확인하실 수 있습니다.</p>
+                <p>"Rits Hotel"은 개인정보보호법"및"정보통신망 이용 촉진 및 정보보호 등에 관한 법률"을 준수하며 내용 외의 개인정보보호 관련 사항은 </p>
+                <p>"Rits Hotel"의 개인정보처리방침에 준하며 자세한 내용은 www.walkerhill.com에서 확인하실 수 있습니다.</p>
             </div>
             <div class="ForthLine">
                 <ul>
                     <li>
-                        리워즈 맴버십 이용약관 및 개인정보 수집 및 활용 동의서에 모두 동의합니다.
-                        <strong><input type='checkbox' name='Terms' value='Terms' /> 모두동의</strong>
+                        Rits Hotel 리워즈 맴버십 이용약관 및 개인정보 수집 및 활용 동의서에 모두 동의합니다.
+                        <input type='checkbox' name='Terms' value='Terms' /> 모두동의
                     </li>
                 </ul>
             </div>
@@ -872,7 +877,9 @@
 
         <div class="Base3">
             <div class="content3">
-                
+                <div class="HighPlusDesign">
+
+                </div>
                 <div class="step3">
                     <ul>
                         <li>
@@ -920,6 +927,4 @@
 </body>
 </html>
 
-<!-- find: Second Hotel 이하 회원 
-.Base2 > .content2 > .HighPlusDesign
--->
+<!-- find: Second Hotel 이하 회원 -->

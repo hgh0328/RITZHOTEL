@@ -120,7 +120,7 @@ header > #main_menu > #right_menu > .right_mini_menu:after {
     }
     #mobile_menu > #m_logo {
         width: 120px;
-        margin: 1% 2%;
+        margin: 8px 2%;
         float: left;
         position: relative;
         z-index: 999;

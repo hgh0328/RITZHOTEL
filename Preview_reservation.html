@@ -26,11 +26,11 @@
             /*키이미지 설정*/
             height: 850px;
             overflow: hidden;
-            background: url(images/Preview/RESERVATION/RESERVATION_bg.png) no-repeat;
+            background: url(images/Preview/RESERVATION/reservation_bg.png) no-repeat;
             background-size: cover; background-attachment: fixed;
             background-position: 100% -50px;
         }
-        .Preview_keytitle{position: relative; width: 100%; top: 25%; transition: 1s; padding-top: 50px; padding-bottom: 50px;}
+        .Preview_keytitle{position: relative; width: 100%; top: 22%; transition: 1s; padding-top: 50px; padding-bottom: 50px;}
         .Preview_line{
             width: 1px;
             height: 50px;
@@ -72,7 +72,7 @@
         /*예약하기 박스부분*/
         .reservationBox {position: absolute;  top: -33.3%;width: 60%; margin: 0 auto; height: auto; background: rgba(0,0,0,0.5); left: 20%; color: #f9f9f9; padding-top: 10px; border-radius: 10px;}
         .boxMaintxt{font-size: 18px;}
-        .fa-sort-down{position: relative;bottom: 2.5px; left: 10px; transition: 0.3s;}
+        .fa-sort-down{position: relative;bottom: 2.5px; left: 10px; transition: 0.3s; font-size: 16px;}
         .fa-sort-down.on{transform: rotate(180deg); bottom: -2.5px;; transition: 0.3s;}
         .reservation_container h3 { display: inline-block;}
         .reservation_container > li{float: left;}
@@ -190,10 +190,11 @@
             .R_time {font-size: 14px; transition:.3s;}
         }
         @media all and (max-width:739px){
-            #Preview_keyimage {height: 650px;}
+            #Preview_keyimage {height: 650px; background-position: 0% 0%;}
             .reservationBox {top: -29.6%; width: 95%; left: 2%; transition:.3s;}
             .recon1 {width: 100%; line-height: 50px; transition:.3s;}
             .recon2 {width: 50%; line-height: 50px; transition:.3s;}
+            .recon3 {width: 100%; display: block;}
             .rc1L{left: 0%;  transition:.3s;}
             .rc1R{right: 0%; transition:.3s;}
             .boxMaintxt {font-size: 16px; transition:.3s;}
@@ -201,7 +202,7 @@
             .ui-datepicker-trigger {width: 17px; top: 5px; transition:.3s;}
             button.slide_button {font-size: 16px; height: 40px; transition:.3s; margin-top: 0px; margin-bottom: 10px;}
             .ResubList{width: 50%;}
-            #testDatepicker1 {margin-left: 12.5%;}
+            #testDatepicker1 {margin-left: 17.5%;}
             
             .reservationTxt {width: 95%; transition:.3s;}
             .reservationMainTxt {margin-top: 10%; transition:.3s;}
@@ -212,8 +213,9 @@
         }
         
         @media all and (max-width:610px){
-            .reservationBox {top: -26.6%;}
-            #testDatepicker1 {margin-left: 15.8%;}
+             #Preview_keyimage {height: 650px; background-position: 0% 0%;}
+            .reservationBox {top: -315px;}
+            #testDatepicker1 {margin-left: 77px;}
         }
 
         
@@ -225,7 +227,7 @@
             
             $(window).scroll(function(e){
                 e.preventDefault();
-                var i = 25;  
+                var i = 22;  
                 var st = $(window).scrollTop()/10+i;
                 $(".Preview_keytitle").css({top: st+"%"});
             });
