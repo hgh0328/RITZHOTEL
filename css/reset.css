@@ -11,6 +11,6 @@ table { border-collapse:collapse;
     table-layout:fixed  }
 fieldset { border:none }
 legend, caption { text-indent:-99999px; display:none }
-body { font:16px '맑은 고딕'; 
+body { font:16px; 
     color:#333; }
 
