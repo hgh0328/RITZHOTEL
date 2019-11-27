@@ -105,7 +105,7 @@
         .R_time {font-size: 16px; line-height: 25px;}
         
         /*버튼효과*/
-        button.slide_button{
+        .slide_button{
             color: #f9f9f9;
             border: 2px solid rgba(137,115,101,0.4);
             border-radius: 10px;
@@ -126,9 +126,9 @@
             -ms-transform:all 1.5s;
             -o-transform:all 1.5s;
         }
-        .BookBtn{width: 100%; display: block;height: 50px; line-height: 50px;}
+        .BookBtn{width: 25%; display: block;height: 50px; line-height: 50px; margin: 0 auto; margin-top: 30px; margin-bottom: 30px;}
 
-        button.slide_button:hover {
+        .slide_button:hover {
           box-shadow: inset 50vmax 0 0 0 rgba(137,115,101,1);
          border: 2px solid rgba(137,115,101,1);
           color: #f9f9f9;
@@ -160,6 +160,10 @@
         .ui-datepicker .ui-datepicker-buttonpane button:hover{color: #897365; background: #f9f9f9; transition: 0.3s;}
         
         /*미디어쿼리*/
+        
+        @media screen and (-ms-high-contrast:active), all and (-ms-high-contrast:none){
+            input[name='CHECK'] {line-height: 20px; height: 40px;}
+        }
         
         @media all and (min-width:1390px) and (max-width:1600px) {
             .reservationBox {top: -32%; transition:.3s;}
@@ -400,7 +404,7 @@
                             </ul>
                         </li>
                     <li class="recon3">
-                        <button class="slide_button"><a href="login.html" class="BookBtn">BOOK NOW</a></button>
+                        <a href="login.html" class="BookBtn slide_button">BOOK NOW</a>
                     </li>
                     </ul>
                 </form>
